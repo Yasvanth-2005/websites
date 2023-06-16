@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Diwali 2k22</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/web/javascript-basic-projects-master/fontawesome-free-5.12.0-web/css/all.css">
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  </head>
+  <body class="text-white">
+
+
+    <!--Banner-->
+    <header>
+            <img src="img/banner.jpeg" class="img-fluid w-100" alt="Happy diwali">
+    </header>
+
+
+    <!-- Background-blasts -->
+    <div class="bg-blasts">
+        <div class="firework" id="fw1">
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+            <div class="stick"></div>
+        </div>
+         <style>
+            .firework{
+                position: absolute;
+                width:500px;
+                height:500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .stick{
+                position: absolute;
+                width: 4px;
+                height: 80px;
+                transform-origin: 50% 100%;
+                overflow: hidden;
+            }
+            .stick:nth-child(1){
+                transform: rotate(0deg) translateY(-15px);
+            }
+            .stick:nth-child(2){
+                transform: rotate(30deg) translateY(-15px);
+            }
+            .stick:nth-child(3){
+                transform: rotate(60deg) translateY(-15px);
+            }
+            .stick:nth-child(4){
+                transform: rotate(90deg) translateY(-15px);
+            }
+            .stick:nth-child(5){
+                transform: rotate(120deg) translateY(-15px);
+            }
+            .stick:nth-child(6){
+                transform: rotate(150deg) translateY(-15px);
+            }
+            .stick:nth-child(7){
+                transform: rotate(180deg) translateY(-15px);
+            }
+            .stick:nth-child(8){
+                transform: rotate(210deg) translateY(-15px);
+            }
+            .stick:nth-child(9){
+                transform: rotate(240deg) translateY(-15px);
+            }
+            .stick:nth-child(10){
+                transform: rotate(270deg) translateY(-15px);
+            }
+            .stick:nth-child(11){
+                transform: rotate(300deg) translateY(-15px);
+            }
+            .stick:nth-child(12){
+                transform: rotate(330deg) translateY(-15px);
+            }
+            .stick::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 100%;
+                right: 0;
+                height: 40px;
+                background: #f5cf52;
+            }
+            @keyframes stick{
+                0%{
+                    top:100%;
+                }
+                33%,100%{
+                    top:-50%;
+                }
+            }
+            #fw1{
+                transform: scale(1);
+            }
+            #fw1 .stick::before{
+                animation: stick 2s ease-in-out infinite ;
+            }
+
+        </style>
+        <style>
+            .bg-blasts{
+                background: transparent;
+                width: 100%;
+                height: 100vh;
+                z-index: -1000;
+               position: fixed;
+            }
+        </style>
+    </div>
+
+    </style>
+
+    
+
+    <!--Modals-->
+    <!-- 1st modal -->
+    <div class="modal fade" id="event1-info" style="color:black">
+        <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Light up the dark</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>The theme of this event is "Finding the faults"</h5>
+              <p class="pt-2">1. As we are familiar with the festival deepavali.. <br>The victory of good over evil,we are here with a new and exciting event....</p>
+              <p>2. Our event is of only one round and everyone who registers can participate in the event.</p>
+              <p>3. We will give you different types of questions and the questions can be paragraphs/ audios/videos/ sentences and many things..</p>
+              <p>4. Every question contains some errors/ mistakes/ faults in it ..</p>
+              <p>5. You have to do is to find mistakes..</p>
+              <p>6.Those who find the most number of mistakes will be the winner of the event..</p>
+              <p>7. The questions are classified into  <br>
+                Dialogues <br>
+                Pictures <br> 
+                Poem <br>
+                Audio file <br>
+                Video clip <br>
+                Paragraph etc ..</p>
+            <p>8. Get ready to find mistakes and get some knowledge..</p>
+            <div class="pt-3">
+                <b>" Answering the questions is not always encouraged.. sometimes correcting the questions is also important "</b> <br> <br>
+                <b>" Debug the things and you are the real learner "</b>
+                <br> <br>
+                <b>Venue&nbsp;:-</b><span> 23rd Oct, 2022 ,11:30A.M</span>
+            </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" type="button"><a href="#" style="color:white;text-decoration:none">Register here</a></button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>          
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--2nd modal-->
+    <div class="modal fade" id="event2-info" style="color:black">
+        <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Seize the Stage</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                    <b>FOR THIS DIWALI.. </b>
+                    <p>all you have to do is to send us your best photos with the theme of DIWALI and along with some sentences, paragraphs, blogs and your words.. <br>
+                        We will select the best picture with the best caption..</p>
+                        <b>
+                            send your entries right away
+                            Light up this diwali without delay
+                        </b>
+                    <br> <br>
+                    <b>Deadline :- </b> <span>24th october 2022, 2:00 PM</span> <br> <br>
+                    <p>Send entries to&nbsp;:- n200642@rguktn.ac.in</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>          
+              </div>
+            </div>
+          </div>
+        </div>
+  
+    </div>
+      <style>
+        .modal-body p{
+            text-indent: 0;
+            font-size:17px;
+        }
+      </style>
+
+      <!-- main -->
+
+    <div class="container pt-3">
+        <h1 class="text-center"><span class="event pad-in">Events</span></h1>
+        <div class="events-container pt-3">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#event1-info" style="border:none;">
+                        <div class="card-body" style="background-color:black">
+                                <img src="img/event2.png" class="img-fluid d-none d-md-block" style="width:300px;height:400px">
+                                <div class="container"><img src="img/event2.png" class="img-fluid d-block d-md-none" style="padding:0px 20px;"></div>
+                        </div>
+                        <div class="card-footer" style="background-color:black">
+                                <h3 class="text-center text-light" style=" background-color:#555;border-radius:10px 10px 0px 0px;padding:3px 5px">Light up the dark</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 d-flex justify-content-center align-items-center pt-4 pt-md-0">
+                    <div class="card" style="border:none;" data-bs-toggle="modal" data-bs-target="#event2-info">
+                        <div class="card-body" style="background-color:black">
+                            <a href="#">
+                                <img src="img/event1.jpeg" class="img-fluid d-none d-md-block" style="width:300px;height:400px">
+                                <div class="container"><img src="img/event1.jpeg" class="img-fluid d-block d-md-none" style="padding:0px 20px;"></div>
+                            </a>
+                        </div>
+                        <div class="card-footer" style="background-color:black">
+                            <a href="#" style="text-decoration: none;">
+                                <h3 class="text-center text-light" style=" background-color:#555;border-radius:10px 10px 0px 0px;padding:3px 5px">Seize the Stage</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container pt-5">
+            <h1 class="text-center"><span class="event pad-in">About</span></h1>
+            <div class="center d-md-none"><img src="img/diwali-1.jpeg" alt="deepavali" class="img-fluid"></div>
+            <h2 class="pt-3"> <div class="underline move-side">What is Diwali/Deepavali?</div> </h2>
+            <aside><img src="img/diwali-1.jpeg" class="d-none d-md-block img-fluid" style="float:right;margin:10px"></aside>
+                <p class="pt-2">The D-Day has finally come. Many of us are eagerly waiting for this day. What id the speciality of this day? It's diwali. Again why do we celebrate diwali? Is bursting firecrackers really necessary? Let's learn more about this festival</p>
+                <p>
+                <p>
+                        The festival gets its name from the row (avali) of clay lamps (deepa) that Indians light outside their homes to symbolize the inner light that protects from spiritual darkness. is a time to understand the meaning of real prosperity that 'brings light to our lives and sparkles to our eyes'
+                </p>
+            <div class="pt-3">
+                <h2><div class="underline move-side">Why do we celebrate diwali?</div></h2>
+            <h6><div class="teritary-underline">The day of Diwali is associated with many historical events.The main reasons are&nbsp;:-</div> </h6>
+            <p>In nothern India,they celebrate the story of king Rama's return to Ayodhya after he defeated Ravana by lightning rows of clay lamps.</p>
+            <p>Southern India celebrates it as the day that Lord krishna defeated the demon Narakasura with the help of satyabhama. Hence we often hear from our elders that diwali is also celebrated as victory of good over evil.</p>
+            <p>In western india the festival marks the day that Lord vishnu, the Preserver (one of the main gods of Hindu trinity) sent the demon King bali to rule the nether world.</p>
+            <p>One of the most important aspects of Diwali is the worship of Maha Lakshmi, the goddess of wealth and prosperity</p>
+            </div>
+            <div class="pt-3">
+                <h2><div class="underline move-side">Specality of Diwali</div></h2>
+                <div class="center d-md-none"><img src="img/img2.jpg" alt="diya lighting" class="img-fluid" width="260" height="200"></div>
+                <aside><img src="img/img2.jpg" class="d-none d-md-block img-fluid" style="float:right;margin:10px" width="260" height="200"></aside>
+                <h5><div class="secondary-underline">True Lamps to Light&nbsp;:-</div></h5>
+                <p>Each year we adorn our homes with brightly lit earthen lamps. We must remember to not only light the lamp in our home, but also in our hearts. We must light the lamps of truth, purity, divinity and peace in our lives</p>
+                <h5><div class="secondary-underline">A Fresh Start&nbsp;:-</div></h5>
+                <p>On Diwali, many people begin a new chapter of their life. Look at the year that went by. How many people did we hurt? How many did we heal? How many times did we lose our temper/ How many times did we give more than we recieved/ Let us truly examine ourselves carefully</p>
+            </div>
+            <div class="pt-3">
+                <h2><div class="underline move-side">Pros and cons of Diwali</div></h2>
+                <p>The main thing is we get to spend our time with our families. This festival is really beautiful. With the preparation of the festive food to decorating the house to bursting crackers. Its all exciting and fun. Lightning diyas and lanterns and putting up fairy lights. Bursting crackers releases smoke which kills the mosquitos and thus reduces the diseases spread by them</p>
+                <aside><img src="img/pollution.jpeg" class="d-none d-md-block img-fluid" style="float:left;margin:10px" width="260" height="200"></aside>
+                <p>But it has many cons. It affects environment. Crackers enhance the specialty of this festival. Beautiful to look at. But, the way it affects the environment is really painful to look at. I'm sure lord Ram didn't want to be welcomed with loud bangs which aren't peaceful at all. but we really need to reduce the amount of crackers we burst. it causes major air pollution and the smoke is bad for people who have lung problems suc as asthama etc.</p>
+                <div class="center d-md-none"><img src="img/pollution.jpeg" alt="diya lighting" class="img-fluid" width="260" height="200"></div>
+                <p>Deepavali itself says "the row of clay lamps" We should lit the lamps and make our home colourfull instead of bursting crackers and polluting air. Let us all take a step forward to create awarness among others about about the cons of bursting crackers.</p>
+                <p>
+                    As the saying goes "every journey starts with a single step" same as "Every change starts with a single person" I hope you, me, we all can be that person. This diwalli let us lit our home with clay lamps instead of bursting crackers. Let you be the one who change this world.
+                </p>
+            </div>
+    </div>
+
+    <div class="up">
+        <a href="#home"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- Footer -->
+   
+  <footer class="text-center text-lg-start bg-dark text-muted">
+    <div class="container">
+        <section class="pt-5 border-bottom">
+              <div class="me-5 d-none d-lg-block w-100">
+                    <h6>Get connected with us on social networks:</h6>
+              </div>
+          <div class="pb-4">
+            <a href="" class="me-4 link-grayish">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 link-grayish">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 link-grayish">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 link-grayish">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 link-grayish">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 link-grayish">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </section>
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <img class="img-fluid " src="assets/img/hero-img.png" alt="">
+                  <h2 href="#home" class="fs-1 ms-5 ps-2" >SDCAC</h2>
+        
+                </h6>
+        
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <br><br>
+                <a class="text-uppercase fw-bold mb-4">
+                  Products
+                </a>
+                <br><br>
+                <p>
+                  <a href="#!" class="text-reset">Tech Events</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">game</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Sports</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">blog bulidng</a>
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <br><br>
+                <a class="text-uppercase fw-bold mb-4">Contact</a>
+                <br><br>
+                <p><i class="fas fa-home me-3 text-grayish"></i>Rgukt Nuzvid</p>
+                <p>
+                  <i class="fas fa-envelope me-3 text-grayish"></i>
+              N180017@rguktn.ac.in
+            </p>
+                <p>
+                  <i class="fas fa-envelope me-3 text-grayish"></i> N180380@rguktn.ac.in
+                </p>
+                <p><i class="fas fa-phone me-3 text-grayish"></i> +91 9398562687</p>
+                <p><i class="fas fa-print me-3 text-grayish"></i> +91 9381103041</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" >Teckzite 2k22.com</a>
+        </div>
+    </div>
+  </footer>
+
+
+    <!-- javascript of bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <style>
+        :root{
+            --bg-primary:white;
+            --bg-secodary:black;
+            --bg-gray-2:#888;
+        }
+        *{
+            padding:0;
+            margin: 0;
+        }
+        body{
+            background-color: var(--bg-secodary);
+        }
+        p{
+            text-indent: 50px;
+            font-size:15px;
+        }
+        h5{
+            text-indent: 20px;
+            font-size:22px;
+        }
+        h6{
+            font-size:20px;
+        }
+        h2+h5{
+            padding-top:10px;
+        }
+        h5,h6{
+            text-decoration: wavy;
+        }
+
+        @media (min-width:700px) {
+            p{
+                font-size: 19px;
+            }
+            h5{
+                font-size:24px;
+            }
+            h6{
+                font-size:22px;
+            }
+        }
+        @media (min-width:650px) {
+            h6{
+                text-indent: 10px;
+            }
+        }
+        .underline{
+            width:fit-content;
+            padding-bottom: 5px;
+            color:orange;
+            border-bottom: 3px solid red;
+            text-shadow: 1px 1px orangered;
+            border-radius:5px;
+            /* background-color: steelblue;
+            padding:0.3rem 9rem 0.3rem 0.5rem;
+            clip-path: polygon(0 0, 72% 0, 90% 100%, 0 100%); */
+        }
+        .secondary-underline{
+            width: fit-content;
+            color:magenta;
+            text-shadow: 1px 1px purple;
+            padding-bottom: 2px;
+            border-bottom: 2px solid burlywood;
+            border-bottom-left-radius: 30%;
+        }
+        .teritary-underline{
+            color:magenta;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom:10px;
+        }
+        .event{
+            width: fit-content;
+            background-color: steelblue;
+            padding:0.1rem 9rem 0.1rem 0.5rem;
+            
+            overflow: hidden;
+        }
+        .card{
+            cursor: pointer;
+        }
+       .move-side{
+        transform: translateX(-50%);
+        opacity: 0;
+        transition:transform 400ms ease-in,
+        opacity 400ms ease-in-out;
+       }
+       .move-side.appear{
+        transform: translateX(0);
+        opacity:1;
+       }
+       .pad-in{
+        padding-right:1rem;
+        transition: padding-right 400ms ease-in;
+       }
+       .pad-in.appear{
+        padding-right: 9rem;
+        clip-path: polygon(0 0, 0 100%, 60% 100%, 52% 0, 54% 0, 62% 100%, 62% 100%, 70% 100%, 62% 0, 64% 0, 72% 100%, 80% 100%, 80% 100%, 72% 0, 74% 0, 82% 100%, 82% 100%, 90% 100%, 82% 0, 84% 0, 92% 100%, 92% 100%, 100% 100%, 92% 0);
+       }
+
+       
+
+
+    </style>
+
+    <!--Up arrow styles-->
+    <style>
+            .up{
+                position: relative;
+                bottom:3%;
+                right:5%;
+                width: 40px;
+                height: 40px;
+                background-color: aqua;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size:22px;
+                position: fixed;
+                animation: move 2s ease-in-out 1s infinite alternate-reverse;
+                display: none;
+            }
+            .up a,.up a:hover{
+                color:black
+            }
+            @keyframes move {
+                0%,100%{
+                    bottom:3%;
+                }
+                50%{
+                    bottom:5%;
+                }
+            }
+            @media (min-width:900px) {
+                .up{
+                    width: 50px;
+                    height: 50px;
+                    font-size:28px;
+                }
+            }
+    </style>
+
+    <!--Scripts-->
+
+    <script>
+        window.addEventListener('scroll',function(){
+            if(window.pageYOffset > document.getElementById('home').getBoundingClientRect().height + 100){
+                document.querySelector('.up').style.display = 'flex';
+            }
+            else{
+                document.querySelector('.up').style.display = 'none';
+            }
+        });        
+
+
+        const sliders = document.querySelectorAll('.move-side');
+        const padders = document.querySelectorAll('.pad-in')
+
+        const appearOptions = {
+            threshold:0,
+            rootMargin:'0px 0px -100px 0px'
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries,appearOnScroll){
+            entries.forEach(entry => {
+                if (!entry.isIntersecting){
+                    return;
+                }
+                else{
+                    entry.target.classList.add('appear');
+                    window.addEventListener('scroll',function(){
+                        if(window.pageYOffset == 0){
+                            entry.target.classList.remove('appear');
+                        }
+                        else{
+                            appearOnScroll.unobserve(entry,target);
+                        }
+                    })
+                }
+            })
+        },appearOptions);
+
+        sliders.forEach(slider => {
+            appearOnScroll.observe(slider);
+        });
+
+        padders.forEach(pad => {
+            appearOnScroll.observe(pad);
+        })
+
+       
+
+
+    </script>
+
+  </body>
+
+</html>

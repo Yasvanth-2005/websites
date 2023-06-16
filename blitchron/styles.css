@@ -1,0 +1,151 @@
+
+    .big-txt{
+      font-weight:600;
+    }
+    button a{
+      color:white;
+      text-decoration:none;
+    }
+    button a:hover{
+      text-decoration:none;
+      color:white;
+    }
+    .fix{
+      position: fixed;
+    }
+    #sidenav{
+      top:30%;
+      left:3%;
+    }
+    .links{
+      color:#bbb;
+      font-weight: 400;
+      text-decoration: none;
+      transition:scale 1.2ms ease-in;
+      margin-top:3px;
+      margin-bottom:3px;
+      margin-left:20px;
+      margin-right: 20px;
+    }
+    .links-active{
+      color:white;
+    }
+    .links:hover,.links1:hover{
+      color:white;
+      transform: scale(1.1);
+      text-decoration: none;
+    }
+    .nav-pills a{
+      color: white;
+      transition: scale 1.5ms ease-in;
+    }
+    .nav-pills a:hover{
+      transform: scale(1.2);
+      color:white;
+    }
+    .divider{
+      margin-top:7px;
+      margin-bottom:7px;
+      height:40px;
+      border-left:1px solid white;
+    }    
+    .showcase{
+      width:100%;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url(img/Asset\ 1assests.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:-10vw -12vw;
+    }
+    .head{
+      padding:5px;
+      font-size:64px;
+      color:white;
+    }
+    .card-outline{
+      border:1px solid white;
+      border-radius: 20px;
+    }
+    .huge{
+      font-size:40px;
+      color:#ccc;
+    }
+    .links1{
+      color:#bbb;
+      font-weight: 400;
+      text-decoration: none;
+      transition:scale 1.2ms ease-in;
+    }
+    .m-end{
+      left:0;
+    }  
+    .huge-dark{
+      font-size:26px;
+      font-weight: 800;
+      color:black;
+      display: flex;
+      justify-content: center;
+    }
+    .huge-light{
+      font-size:26px;
+      font-weight: 800;
+      display: flex;
+      justify-content: center
+    }
+    .txt{
+      color:#ddd;
+    }
+    .txt-bold{
+      color:white;
+      font-weight: 500;
+    }
+    .sponsor-img{
+      background-color: white;
+      border-radius: 20px;
+    }
+    .card-outline:hover{
+      box-shadow: 1px 1px 1px 0px white,
+                  -1px -1px 1px 0px white;
+    }
+    .img-1{
+      width:200px;
+      height: 200px;
+      background-image: url(img/team/Shrija.png);
+      background-size: cover;
+      transition:scale 550ms ease;
+    }
+    .img-1:hover{
+      background-image: url(img/team/Harshvardhan.png);
+      transform: scale(1.05);
+    }
+    #up-icon{
+      bottom:4%;
+      right:5%;
+      width:50px;
+      height: 50px;
+      position: fixed;
+      border-radius: 50%;
+      background-color: aquamarine;
+      /* display: flex; */
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      display: none;
+      animation: move 1s infinite;
+    }
+    .up{
+      font-size: 22px;
+      color: black;
+      font-weight: 900;
+    }
+    @keyframes move {
+      0%,100%{
+        bottom: 40px;
+      }
+      50%{
+        bottom: 50px;
+      }
+    }
